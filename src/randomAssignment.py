@@ -2,13 +2,29 @@ def randomAssignment(
         data, 
         subjectID, 
         nVisits, 
-        seed,
         nIter,
         batchSize, 
-        nBatches
+        nBatches,
+        seed = 1989
         ):
+    
+    """
+    Randomizes samples to batches, given batch size constraints and input data.
 
-    t1 = time.time()
+    Args:
+        data = input data, expected to be wide format with columns for SubjectID and nVisits.
+        subjectID = column name for subject ID, expects string.
+        nVisits = column name for the number of subject visits/samples, expects string.
+        seed = random seed number.
+        nIter = number of iterations to run, expects integer.
+        batchSize = size of each batch. 
+        nBatches = number of batches.
+    
+    Returns:
+        A dictionary containing each iteration of the randomized assignments.
+    """
+
+    start_time = time.time()
     randomized_assignments = []
     random.seed(seed)
 
@@ -40,8 +56,8 @@ def randomAssignment(
 
         randomized_assignments.append(batches)
 
-    t2 = time.time()
-    print(f'Ran {nIter} iterations in {t2-t1:.1f} seconds\n')
+    end_time = time.time()
+    print(f'Ran {nIter} iterations in {(end_time - start_time):.1f} seconds\n')
     print(f'Total samples to analyze: {data[nVisits].sum()}\n')
     print(f'Total subjects to analyze: {len(data)}\n')
     print(f'Printing iteration #1: {randomized_assignments[0]}\n')
