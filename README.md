@@ -77,6 +77,11 @@ Included below is an example plate layout containing calibrators, internal plate
 
 Batch effects introduce bias when analyzing biological samples, but randomization strategies can help mitigate these issues. A two-step approach of randomizing samples to batches and then evaluating balance using propensity scores can improve the stability of batch assignments. Longitudinal study designs require additional considerations.
 
+```python
+# load package 
+import propensitybatchrandomization as pbr
+```
+
 ---
 
 # How It Works  

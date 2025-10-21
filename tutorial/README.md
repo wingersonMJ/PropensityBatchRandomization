@@ -1,9 +1,11 @@
 # Use example
 
 ```python
+# load package 
+import propensitybatchrandomization as pbr
+
 # Data 
-file_path = 'example_data.csv'
-df = pd.read_excel(file_path)
+df = pd.read_csv(".\\tutorial\\example_data.csv")
 ```
 
 Run the random assignments function. In this example, `subjectID` and `nVisits` are defined as 'id' and 'nVisits' in my dataset. The batchSize constraint is set to 34 samples per batch, with 4 batches in total:
