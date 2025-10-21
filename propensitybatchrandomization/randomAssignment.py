@@ -1,4 +1,10 @@
-def randomAssignment(
+import random
+import pandas as pd
+import time
+import numpy as np
+from collections import defaultdict
+
+def randomAssignments(
         data, 
         subjectID, 
         nVisits, 

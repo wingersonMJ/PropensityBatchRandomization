@@ -1,1 +1,20 @@
-. 
+[project]
+name = "propensitybatchrandomization"
+version = "0.1.0"
+description = "A tool for randomizing biological samples across batches while maintaining covariate balance through propensity score–based evaluation."
+authors = [
+    {name = "Mathew Wingerson"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy (>=2.3.4,<3.0.0)",
+    "pandas (>=2.3.3,<3.0.0)",
+    "scikit-learn (>=1.7.2,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

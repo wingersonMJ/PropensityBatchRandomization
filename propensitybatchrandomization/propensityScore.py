@@ -1,3 +1,9 @@
+import pandas as pd
+import time
+import numpy as np
+from collections import defaultdict
+from sklearn.linear_model import LogisticRegression
+
 def propensity_scores(
         data, 
         subject_id, 
