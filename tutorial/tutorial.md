@@ -6,9 +6,9 @@ file_path = 'example_data.csv'
 df = pd.read_excel(file_path)
 ```
 
-Run the random assignment function. In this example, `subjectID` and `nVisits` are defined as 'id' and 'nVisits' in my dataset. The batchSize constraint is set to 34 samples per batch, with 4 batches in total:
+Run the random assignments function. In this example, `subjectID` and `nVisits` are defined as 'id' and 'nVisits' in my dataset. The batchSize constraint is set to 34 samples per batch, with 4 batches in total:
 ```python
-assignments = randomAssignment(
+assignments = randomAssignments(
                     data = df, 
                     subjectID = 'id', 
                     nVisits = 'nVisits', 

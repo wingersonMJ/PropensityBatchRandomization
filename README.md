@@ -11,18 +11,16 @@ This package provides a structured tool for randomizing participant biological s
 
 ## Table of Contents
 
-1. [Project Overview](#microscope-project-overview)
-2. [How It Works](#hammer_and_wrench-how-it-works)
-   - [randomAssignment](#randomassignment)
+1. [Project Overview](#project-overview)
+2. [How It Works](#how-it-works)
+   - [randomAssignment](#randomassignments)
    - [propensity_scores](#propensity_scores)
-4. [Use Example](#factory-use-example)
-5. [Troubleshooting](#flashlight-troubleshooting)
 
 ---
 
 # Project Overview 
 
-The collection of **biological samples**, such as blood plasma or serum, provides an objective means of measuring physiological responses to injury and rehabilitation. However, **sample processing, long-term storage, and analysis** introduce multiple opportunities for bias (see [Troubleshooting](#troubleshooting) below for potential issues). One common issue, which can be mitigated with moderate pre-planning, is **batch effects**.
+The collection of **biological samples**, such as blood plasma or serum, provides an objective means of measuring physiological responses to injury and rehabilitation. However, **sample processing, long-term storage, and analysis** introduce multiple opportunities for bias. One common issue, which can be mitigated with moderate pre-planning, is **batch effects**.
 
 ### What are batch effects?
 Batch effects occur when samples processed in different batches produce systematically different results. Each batch analyzed using the Single Molecule Array (SIMOA) is subject to a certain degree of error or variability. In theory, the same sample could be analyzed in multiple batches and return slightly different values each time.
