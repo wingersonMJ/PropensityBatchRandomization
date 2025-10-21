@@ -3,7 +3,7 @@ from propensitybatchrandomization import propensity_scores
 from propensitybatchrandomization import randomAssignments 
 
 # read in example data
-df = pd.read_csv("example_data.csv")
+df = pd.read_csv(".\\tutorial\\example_data.csv")
 
 # define covariates
 covariates = ['location', 'intervention_group', 'time_to_enrollment', 'sex']  
