@@ -1,6 +1,7 @@
 # Batch Randomization for Biological Samples in Longitudinal Data Analysis
 Wingerson, MJ  
-mat.wingerson@gmail.com
+mat.wingerson@gmail.com  
+[PyPI project link](https://pypi.org/project/propensitybatchrandomization/)
 
 ## Description
 This package provides a structured tool for randomizing participant biological samples across plates or batches while numerically evaluating the balance of key participant covariates post-randomization. The goal is to mitigate batch effects commonly encountered in the analysis of biological samples.
