@@ -184,3 +184,7 @@ data['Batch_Assignment'] = None
  ```
 
 ---
+
+## Flow of Data:
+
+<img src="figs\flow_chart.jpg" size=600>
